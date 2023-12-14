@@ -1,0 +1,23 @@
+*.log
+.DS_Store
+node_modules
+docs/node_modules
+.cache
+.rts2_cache_cjs
+.rts2_cache_esm
+.rts2_cache_umd
+.rts2_cache_system
+dist
+storybook-static
+coverage/
+
+# Production
+.next
+.vercel
+docs/.next
+docs/.vercel
+docs/node_modules
+.DS_Store
+
+
+.tsbuildinfo

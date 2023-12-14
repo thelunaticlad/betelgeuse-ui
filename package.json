@@ -1,0 +1,55 @@
+{
+  "version": "0.0.1",
+  "name": "void-ui",
+  "description": "Void UI is a design system for building web applications. It provides a set of reusable components and a theme system that can be customized to suit your needs. Void UI is a powerful tool for building web applications that are visually appealing and user-friendly.",
+  "homepage": "https://iagon-ui.vercel.app/",
+  "repository": "https://github.com/thelunaticlad/void-ui.git",
+  "bugs": "https://github.com/thelunaticlad/void-ui/issues",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "keywords": [
+    "design-system",
+    "components",
+    "ui-library",
+    "component",
+    "framework",
+    "theming",
+    "design",
+    "css",
+    "ui"
+  ],
+  "_moduleAliases": {
+    "@": "."
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "build": "tsc",
+    "link": "cd dist && npm link",
+    "dev:local": "tsc && cd dist && npm link && cd .. && cd docs && npm link void-ui && npm run start",
+    "pub": "tsc && cd dist && npm publish",
+    "docs:start": "cd docs && npm run start",
+    "docs:build": "cd docs && npm run build",
+    "run:test": "node src/test.js"
+  },
+  "author": "Nischal Timalsina",
+  "license": "Apache License",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "module-alias": "^2.2.2",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4",
+    "@types/react": "^18.2.45"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
