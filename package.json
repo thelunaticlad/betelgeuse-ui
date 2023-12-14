@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "name": "void-ui",
+  "name": "voidui",
   "description": "Void UI is a design system for building web applications. It provides a set of reusable components and a theme system that can be customized to suit your needs. Void UI is a powerful tool for building web applications that are visually appealing and user-friendly.",
   "homepage": "https://iagon-ui.vercel.app/",
   "repository": "https://github.com/thelunaticlad/void-ui.git",
