@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "betelgeuse-ui": "^0.0.51",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
