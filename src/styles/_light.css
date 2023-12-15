@@ -1,0 +1,12 @@
+body.light {
+  --primary-color: #6b38fb;
+  --secondary-color: #ffac3e;
+  --success-color: #44d7b6;
+  --warning-color: #ff7b7b;
+  --error-color: #ff375f;
+  --background-color: #e6ebf5;
+  --text-color: #424b5a;
+  --accent-color: #9b9eff;
+  --border-color: #e2e6ff;
+  --hover-color: #9b9eff;
+}

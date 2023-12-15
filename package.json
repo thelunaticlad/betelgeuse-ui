@@ -1,5 +1,5 @@
 {
-  "version": "0.0.51",
+  "version": "0.0.55",
   "name": "betelgeuse-ui",
   "description": "Betelgeuse UI is a design system for building web applications. It provides a set of reusable components and a theme system that can be customized to suit your needs. Betelgeuse UI UI is a powerful tool for building web applications that are visually appealing and user-friendly.",
   "homepage": "https://betelgeuseui.vercel.app/",
@@ -24,12 +24,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "format": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx,css}\"",
     "build": "tsc",
-    "clean": "rm -rf dist",
     "link": "cd dist && npm link",
-    "dev:local": "tsc && cd dist && npm link && cd .. && cd docs && npm link void-ui && npm run start",
+    "dev:local": "tsc && cd dist && npm link && cd .. && cd docs && npm link void-ui && npm run dev",
     "pub": "tsc && cd dist && npm publish",
-    "docs:start": "cd docs && npm run start",
+    "docs:start": "cd docs && npm run dev",
     "docs:build": "cd docs && npm run build",
     "run:test": "node src/test.js"
   },
@@ -37,20 +37,28 @@
   "license": "Apache License",
   "files": [
     "dist",
+    "index.d.ts",
+    "index.css",
+    "dist",
     "README.md",
-    "LICENSE",
-    "package.json"
+    "package.json",
+    "LICENSE"
   ],
   "devDependencies": {
     "@types/node": "^18.16.3",
     "@types/react": "^18.2.45",
     "module-alias": "^2.2.2",
-    "ts-node": "^10.9.1",
+    "postcss": "^8.4.32",
+    "postcss-scss": "^4.0.9",
+    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
+    "prettier": "^3.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5"
   }
 }

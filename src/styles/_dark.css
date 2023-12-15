@@ -1,0 +1,12 @@
+body.dark {
+  --primary-color: #8184ff;
+  --secondary-color: #ffac3e;
+  --success-color: #44d7b6;
+  --warning-color: #ff7b7b;
+  --error-color: #ff375f;
+  --background-color: #f9f9fb;
+  --text-color: #f9f9fb;
+  --accent-color: #9b9eff;
+  --border-color: #3a3b41;
+  --hover-color: #9b9eff;
+}

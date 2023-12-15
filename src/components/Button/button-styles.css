@@ -1,0 +1,41 @@
+@import url("../../styles/index.css");
+
+.btn {
+  all: unset;
+  border-radius: var(--base) * 2;
+
+  & .btn-small {
+    padding: var(--base) var(--base) * 2;
+  }
+  & .btn-medium {
+    padding: var(--base) + 2 var(--base) * 3;
+  }
+  & .btn-large {
+    padding: var(--base) * 2 var(--base) * 3;
+  }
+  & .btn-contained {
+    background: var(--primary-color);
+  }
+  & .btn-outlined {
+    border: 1px solid;
+    border-color: var(--primary-color);
+  }
+  & .btn-text {
+    color: var(--primary-color);
+  }
+  & .btn-contained-disabled {
+    backdrop-filter: brightness(75%);
+  }
+  & .btn-outlined-disabled {
+  }
+  & .btn-text-disabled {
+  }
+  & .btn-primary {
+  }
+  & .btn-secondary {
+  }
+  & .btn-primary-disabled {
+  }
+  & .btn-secondary-disabled {
+  }
+}
