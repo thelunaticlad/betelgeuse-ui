@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import Button from "betelgeuse-ui";
+import Button from "betelgeuse-ui/dist/src/components/button";
 
 export default function Home() {
   return (
